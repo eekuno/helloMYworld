@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="my.edu.tarc.helloworld.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/TextViewMessage" />
+
+    <Button
+        android:text="@string/ClickMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/TextViewMessage"
+        android:layout_toEndOf="@+id/TextViewMessage"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:id="@+id/ButtonShowMessage"
+        android:onClick="showMessage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/applepen"
+        android:id="@+id/ApplePen"
+        android:layout_above="@+id/ButtonShowMessage"
+        android:layout_alignLeft="@+id/ButtonShowMessage"
+        android:layout_alignStart="@+id/ButtonShowMessage"
+        android:layout_marginBottom="42dp" />
+
+    <Button
+        android:text="Magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ButtonShowMessage"
+        android:layout_alignLeft="@+id/ButtonShowMessage"
+        android:layout_alignStart="@+id/ButtonShowMessage"
+        android:layout_marginTop="22dp"
+        android:id="@+id/Disappear"
+        android:onClick="disappear" />
+
+    <Button
+        android:text="come"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Disappear"
+        android:layout_alignLeft="@+id/Disappear"
+        android:layout_alignStart="@+id/Disappear"
+        android:layout_marginTop="29dp"
+        android:id="@+id/button4"
+        android:onClick="visible" />
+
+</RelativeLayout>
